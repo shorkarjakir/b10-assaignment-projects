@@ -1,19 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>B10-Projects</title>
-</head>
-<body>
-    <header>
 
+    <!-- google Fonts CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <!-- Daisy UI  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        .manrope-fonts{
+            font-family: "Manrope", sans-serif;
+        }
+    </style>
+
+    <!-- tailwind custom configaration -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                'arrowPrimay': '#ABEF5F',
+                
+              }
+            }
+          }
+        }
+      </script>
+      <!-- font awesome -->
+      <script src="https://kit.fontawesome.com/9a1cb14556.js" crossorigin="anonymous"></script>
+</head>
+<body class="manrope-fonts">
+    <header class="bg-[#E9E9E9]">
+      <!-- Nav bar Section -->
+      <nav>
+        <div class="navbar container lg:max-w-6xl mx-auto p-7">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div class="flex gap-3">
+                <span class=""><i class="fa-solid fa-arrow-right bg-arrowPrimay -rotate-45 p-2 rounded-full"></i></span>
+                <h3 class="text-3xl text-[#212121] font-extrabold">Rinterio</h3>
+                
+              </div>
+             
+            </div>
+          
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 mx-2">
+              <li class="font-extrabold"><a>Home</a></li>
+              <li><a>Services</a></li>
+              <li><a>Portfolio</a></li>
+              <li><a>Blogs</a></li>
+              <li><a>Contact Us</a></li>
+
+            </ul>
+          </div>
+          <div class="navbar-end">
+           <div class="hidden lg:flex align-middle items-center gap-2.5">
+            <span><i class="fa-solid fa-magnifying-glass bg-white rounded-full p-3"></i></span>
+            <span><i class="fa-solid fa-cart-shopping bg-white rounded-full p-3"></i></span>
+            <a class="text-black font-bold text-xl bg-arrowPrimay rounded-full pt-2.5 pb-2.5 pr-4 pl-4" href="#">Book Consult <span class=""><i class="fa-solid fa-arrow-right text-white bg-black -rotate-45 p-2 rounded-full ml-2"></i></span></a>
+           </div>
+          </div>
+        </div>
+      </nav>
+       
     </header>
     <main>
 
     </main>
     <footer>
-        
+
     </footer>
 </body>
 </html>
